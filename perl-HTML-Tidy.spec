@@ -8,7 +8,7 @@
 Summary:	HTML::Tidy - (X)HTML validation in a Perl object
 Name:		perl-HTML-Tidy
 Version:	1.54
-Release:	1
+Release:	2
 License:	Artistic v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/P/PE/PETDANCE/HTML-Tidy-%{version}.tar.gz

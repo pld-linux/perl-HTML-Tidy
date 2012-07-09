@@ -6,23 +6,23 @@
 %define		pnam	Tidy
 %include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Tidy - (X)HTML validation in a Perl object
+Summary(pl.UTF-8):	HTML::Tidy - sprawdzanie poprawności (X)HTML-a w obiekcie Perla
 Name:		perl-HTML-Tidy
 Version:	1.54
 Release:	2
 License:	Artistic v2
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/P/PE/PETDANCE/HTML-Tidy-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Tidy-%{version}.tar.gz
 # Source0-md5:	3025e63d5a85d2abfa793dc1353f8752
 URL:		http://search.cpan.org/dist/HTML-Tidy/
 BuildRequires:	libtidyp-devel
-BuildRequires:	perl(ExtUtils::MakeMaker)
-BuildRequires:	perl(Test::Builder)
-BuildRequires:	perl(Test::More)
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Test::Pod)
-BuildRequires:	perl(Test::Pod::Coverage)
+BuildRequires:	perl-Test-Pod
+BuildRequires:	perl-Test-Pod-Coverage
+BuildRequires:	perl-Test-Simple
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,6 +30,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 HTML::Tidy is an HTML checker in a handy dandy object. It's meant as a
 replacement for HTML::Lint. If you're currently an HTML::Lint user
 looking to migrate, see the section /Converting from HTML::Lint.
+
+%description -l pl.UTF-8
+HTML::Tidy to narzędzie do sprawdzania poprawności HTML-a postaci
+poręcznego obiektu. Jest pomyślany jako zamiennik HTML::Lint.
+Użytkownikom modułu HTML::Lint, chcącym się przenieść, przyda się
+lektura sekcji /Converting from HTML::Lint.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

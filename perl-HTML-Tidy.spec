@@ -65,6 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/HTML/Tidy
 %{perl_vendorarch}/HTML/Tidy/Message.pm
 %dir %{perl_vendorarch}/auto/HTML/Tidy
-%{perl_vendorarch}/auto/HTML/Tidy/Tidy.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/HTML/Tidy/Tidy.so
 %{_mandir}/man3/HTML::Tidy*

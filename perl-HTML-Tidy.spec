@@ -8,12 +8,12 @@
 Summary:	HTML::Tidy - (X)HTML validation in a Perl object
 Summary(pl.UTF-8):	HTML::Tidy - sprawdzanie poprawności (X)HTML-a w obiekcie Perla
 Name:		perl-HTML-Tidy
-Version:	1.54
-Release:	11
+Version:	1.60
+Release:	1
 License:	Artistic v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Tidy-%{version}.tar.gz
-# Source0-md5:	3025e63d5a85d2abfa793dc1353f8752
+# Source0-md5:	03bafb9a0a2a23629cf9649abb2b72ab
 URL:		http://search.cpan.org/dist/HTML-Tidy/
 BuildRequires:	libtidyp-devel
 BuildRequires:	perl-ExtUtils-MakeMaker

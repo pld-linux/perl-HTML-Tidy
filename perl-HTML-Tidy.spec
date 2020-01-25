@@ -4,7 +4,6 @@
 
 %define		pdir	HTML
 %define		pnam	Tidy
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Tidy - (X)HTML validation in a Perl object
 Summary(pl.UTF-8):	HTML::Tidy - sprawdzanie poprawności (X)HTML-a w obiekcie Perla
 Name:		perl-HTML-Tidy

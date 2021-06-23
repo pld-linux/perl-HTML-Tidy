@@ -13,11 +13,12 @@ License:	Artistic v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-Tidy-%{version}.tar.gz
 # Source0-md5:	03bafb9a0a2a23629cf9649abb2b72ab
-URL:		http://search.cpan.org/dist/HTML-Tidy/
+URL:		https://metacpan.org/dist/HTML-Tidy
 BuildRequires:	libtidyp-devel
 BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Test-Pod
 BuildRequires:	perl-Test-Pod-Coverage
@@ -65,4 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/HTML/Tidy/Message.pm
 %dir %{perl_vendorarch}/auto/HTML/Tidy
 %attr(755,root,root) %{perl_vendorarch}/auto/HTML/Tidy/Tidy.so
-%{_mandir}/man3/HTML::Tidy*
+%{_mandir}/man3/HTML::Tidy*.3pm*
